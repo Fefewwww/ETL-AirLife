@@ -72,8 +72,8 @@ Edit the database configuration in `src/load_data.py`:
 
 ```python
 DATABASE_CONFIG = {
-    'username': 'your_username',      # Replace with your PostgreSQL username
-    'password': 'your_password',      # Replace with your PostgreSQL password
+    'username': 'tomkarch',      # Replace with your PostgreSQL username
+    'password': '',      # Replace with your PostgreSQL password
     'host': 'localhost',
     'port': '5432',
     'database': 'airlife_db'
