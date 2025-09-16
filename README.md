@@ -72,8 +72,8 @@ Edit the database configuration in `src/load_data.py`:
 
 ```python
 DATABASE_CONFIG = {
-    'username': 'your_username',      # Replace with your PostgreSQL username
-    'password': 'your_password',      # Replace with your PostgreSQL password
+    'username': 'postgres',      # Replace with your PostgreSQL username
+    'password': 'Y=9k1aDF',      # Replace with your PostgreSQL password
     'host': 'localhost',
     'port': '5432',
     'database': 'airlife_db'
@@ -206,3 +206,26 @@ After completing this workshop, you'll be ready for the larger AirLife project w
 - Automated scheduling
 
 Good luck building your first ETL pipeline! 🚀
+
+
+
+######
+# AirLife ETL Pipeline
+
+## What This Does
+This pipeline extracts airport data from a CSV file and live flight data from an API, 
+cleans the data, and loads it into a PostgreSQL database.
+
+## How to Run It
+1. Install dependencies: `pip install -r requirements.txt`
+2. Set up PostgreSQL database
+3. Update database connection in `src/load_data.py`
+4. Run: `python main.py`
+
+## What We Built
+- **Extract:** Gets airport data from CSV and flight data from OpenSky Network API
+- **Transform:** Cleans invalid coordinates and converts units
+- **Load:** Puts clean data into PostgreSQL tables
+
+## Team Members
+- Fefew aka Félix Duron, Karchito aka Tom Karch, Lison aka Lisa Escaron 
